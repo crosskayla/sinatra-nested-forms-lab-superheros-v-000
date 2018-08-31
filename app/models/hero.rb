@@ -1,17 +1,18 @@
-class Team
+class Hero
 
-  attr_reader :name, :motto
+  attr_reader :name, :power, :biography
 
-  TEAMS = []
+  HEROES = []
 
   def initialize(params)
     @name = params[:name]
-    @motto = params[:motto]
-    TEAMS << self
+    @power = params[:power]
+    @biography = params[:biography]
+    HEROES << self
   end
 
   def self.all
-    TEAMS
+    HEROES
   end
 
 end
